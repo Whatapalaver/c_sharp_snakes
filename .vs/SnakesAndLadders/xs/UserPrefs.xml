@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{3BD35FFB-46BC-4DFD-8209-AC0602101F8F}|Default">
-  <MonoDevelop.Ide.ItemProperties.SnakesAndLadders FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.SnakesAndLadders PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SnakesAndLadders/Program.cs">
     <Files>
-      <File FileName="SnakesAndLadders/Program.cs" Line="1" Column="1" />
+      <File FileName="SnakesAndLadders/Program.cs" Line="16" Column="1" />
+      <File FileName="SnakesAndLadders/Player.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

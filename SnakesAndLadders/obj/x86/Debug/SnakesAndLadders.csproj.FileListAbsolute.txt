@@ -1,0 +1,6 @@
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/bin/Debug/SnakesAndLadders.exe
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/obj/x86/Debug/SnakesAndLadders.csprojAssemblyReference.cache
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/obj/x86/Debug/SnakesAndLadders.csproj.CoreCompileInputs.cache
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/obj/x86/Debug/SnakesAndLadders.exe
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/obj/x86/Debug/SnakesAndLadders.pdb
+/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/bin/Debug/SnakesAndLadders.pdb
