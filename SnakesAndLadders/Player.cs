@@ -39,17 +39,59 @@ namespace SnakesAndLadders
 
         }
 
-        private void PlayerMove()
+        public void PlayerMove()
         {
             int roll = DiceRoll();
-            position += roll;
-            Console.WriteLine("You are now at position {0}.", position);
+            if (ValidMove(roll))
+            {
+                position += roll;
+                Console.WriteLine("You are now at position {0}.", position);
+            }
+            else
+            {
+                ExceptionMove(roll);
+            }
+
+        }
+
+        private void ExceptionMove(int roll)
+        {
+            // test for win or overshoot
+            if (Win(roll))
+            {
+                inPlay = false;
+                DeclareWinner();
+            }
+            else
+            {
+                DeclareOvershoot(roll);
+            }
+        }
+
+        private void DeclareOvershoot(int roll)
+        {
+            Console.WriteLine("You overshot the last square with a roll of {0}, try again!}.", roll);
+        }
+
+        private void DeclareWinner()
+        {
+            Console.WriteLine("{0} You have won!!}.", Name);
         }
 
         private int DiceRoll()
         {
             Random rnd = new Random();
             return rnd.Next(1, 6);
+        }
+
+        private bool Win(int roll)
+        {
+            return (position + roll) == Constants.FinalPosition;
+        }
+
+        private bool ValidMove(int roll)
+        {
+            return (position + roll) < Constants.FinalPosition;
         }
     }
 }
