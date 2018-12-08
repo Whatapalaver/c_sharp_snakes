@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{3BD35FFB-46BC-4DFD-8209-AC0602101F8F}|Default">
   <MonoDevelop.Ide.ItemProperties.SnakesAndLadders PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SnakesAndLadders/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SnakesAndLadders/Player.cs">
     <Files>
-      <File FileName="SnakesAndLadders/Program.cs" Line="16" Column="1" />
-      <File FileName="SnakesAndLadders/Player.cs" Line="1" Column="1" />
+      <File FileName="SnakesAndLadders/Program.cs" Line="18" Column="10" />
+      <File FileName="SnakesAndLadders/Player.cs" Line="12" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/whatapalaver/Documents/GitHub/tech_tests/c_sharp/SnakesAndLadders/SnakesAndLadders/Player.cs" relfile="SnakesAndLadders/Player.cs" line="41" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

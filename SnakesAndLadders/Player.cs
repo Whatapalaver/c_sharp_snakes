@@ -5,30 +5,30 @@ namespace SnakesAndLadders
 {
     public class Player
     {
-        private bool inPlay { get; set; }
-        private int position { get; set; }
+        private bool InPlay { get; set; }
+        private int Position { get; set; }
         public string Name { get; set; }
 
         public Player(string Name)
         {
-            position = Constants.StartingPosition;
-            inPlay = true;
-            Console.WriteLine("Welcome {0}. You are at position {1}!", Name, position);
+            Position = Constants.StartingPosition;
+            InPlay = true;
+            Console.WriteLine("Welcome {0}. You are at position {1}!", Name, Position);
         }
 
         public void Play()
         {
-            while (position != Constants.FinalPosition && inPlay)
+            while (Position != Constants.FinalPosition && InPlay)
             {
-                Console.WriteLine("You are at position {0}, press any key to roll, or 'Q' to exit", position);
+                Console.WriteLine("You are at position {0}, press any key to roll, or 'Q' to exit", Position);
                 string decision = Console.ReadLine() ?? string.Empty;
 
                 // Handle user input Q to exit otherwise move()
                 switch (decision.ToUpper())
                 {
                     case "Q":
-                        Console.WriteLine("You appear to have become bored at position {0}. Goodbye!", position);
-                        inPlay = false;
+                        Console.WriteLine("You appear to have become bored at position {0}. Goodbye!", Position);
+                        InPlay = false;
                         break;
                     default:
                         PlayerMove();
@@ -44,8 +44,8 @@ namespace SnakesAndLadders
             int roll = DiceRoll();
             if (ValidMove(roll))
             {
-                position += roll;
-                Console.WriteLine("You are now at position {0}.", position);
+                Position += roll;
+                Console.WriteLine("You are now at position {0}.", Position);
             }
             else
             {
@@ -59,7 +59,7 @@ namespace SnakesAndLadders
             // test for win or overshoot
             if (Win(roll))
             {
-                inPlay = false;
+                InPlay = false;
                 DeclareWinner();
             }
             else
@@ -70,12 +70,12 @@ namespace SnakesAndLadders
 
         private void DeclareOvershoot(int roll)
         {
-            Console.WriteLine("You overshot the last square with a roll of {0}, try again!}.", roll);
+            Console.WriteLine("You overshot the last square with a roll of {0}, try again!.", roll);
         }
 
         private void DeclareWinner()
         {
-            Console.WriteLine("{0} You have won!!}.", Name);
+            Console.WriteLine("{0} You have won!!.", Name);
         }
 
         private int DiceRoll()
@@ -86,12 +86,12 @@ namespace SnakesAndLadders
 
         private bool Win(int roll)
         {
-            return (position + roll) == Constants.FinalPosition;
+            return (Position + roll) == Constants.FinalPosition;
         }
 
         private bool ValidMove(int roll)
         {
-            return (position + roll) < Constants.FinalPosition;
+            return (Position + roll) < Constants.FinalPosition;
         }
     }
 }
